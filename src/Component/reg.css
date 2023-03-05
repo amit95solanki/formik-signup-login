@@ -1,0 +1,23 @@
+.BOX1{
+  height: 350px;
+  width: 50%;
+  margin: 5% 25%;
+  position: relative;
+  top: 25%;
+  border: 2px rgb(218, 216, 216) solid;
+  box-sizing: border-box;
+  border-radius: 5%;
+  box-shadow: rgba(213, 200, 200, 0.3); 
+}
+
+input{
+  border:2px solid blackS;
+}
+
+dl{
+  margin: 0 20px;
+}
+
+button{
+  margin: 0 50%;
+}

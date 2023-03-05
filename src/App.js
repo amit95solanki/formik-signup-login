@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+// import './App.css';
+// import Ragister from "./Component/Ragister";
+import Signupp from "./Component/Signupp";
+import Home from "./Component/Home";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Component/Navbar";
+import Loginn from "./Component/Loginn";
+import { useStateValue } from "./Component/store";
+import RequireAuth from "./RequireAuth";
+import User from "./Component/User";
 
 function App() {
+  const [{ token }] = useStateValue();
+  console.log("this is app token", token);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/signupp" element={<Signupp />} />
+
+        <Route path="/loginn" element={<Loginn />} />
+
+        <Route element={<RequireAuth />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/user" element={<User />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

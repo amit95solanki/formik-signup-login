@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+padding:0;
+}
+
+.Box{
+    background-image: url("https://images.pexels.com/photos/2362009/pexels-photo-2362009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Times New Roman', Times, serif;
+    height: 180vh;
+}
+
+h1{
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 250px;
+}
+p{
+    font-size: 14px;
+    color: aliceblue;
+    
+}
+h3{
+    font-size: 25px;
+    margin-top: 50px;
+    color: aliceblue;
+}
+.glyphicon-pencil{
+    font-size: 50px;
+    color: aliceblue;
+}
+hr{
+    color: aliceblue;
+}
+
+.form-control{
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top: 15px;
+    height: 30px;
+}
+dt{
+    color: aliceblue;
+}
+
+button{
+    background: transparent;
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+   position: relative;
+   left: 50px;
+    margin-top: 16px;
+}
